@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kontakt - Sonni Albihn</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="nav-container">
+            <ul class="nav-list">
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="about.html">Om mig</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contact" class="content-section contact-section">
+        <div class="section-header">
+            <h2 class="section-title">Kontakta Mig</h2>
+            <div class="title-underline"></div>
+        </div>
+        
+        <div class="contact-container">
+            <div class="contact-info">
+                <p class="contact-intro">Har du några frågor eller vill diskutera ett projekt? Kontakta mig gärna!</p>
+                
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="icon-circle">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>E-post</h4>
+                            <span>sonni.albihn@example.com</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon-circle">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Telefon</h4>
+                            <span>+46 70 XXX XX XX</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon-circle">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Plats</h4>
+                            <span>Landskrona, Sverige</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <h3>Följ mig</h3>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/sonni-albihn" class="social-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/sonni-albihn" class="social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-container">
+                <form action="https://formspree.io/f/maykqwjr" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Namn</label>
+                        <div class="input-group">
+                            <i class="fas fa-user"></i>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-post</label>
+                        <div class="input-group">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Meddelande</label>
+                        <div class="input-group">
+                            <i class="fas fa-comment-alt"></i>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <span>Skicka meddelande</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <p>© 2025 Sonni Albihn | All Rights Reserved</p>
+    </footer>
+</body>
+</html>

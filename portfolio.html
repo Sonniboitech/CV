@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio - Sonni Albihn</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="nav-container">
+            <ul class="nav-list">
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="about.html">Om mig</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="portfolio" class="content-section portfolio-section">
+        <div class="portfolio-header">
+            <h2 class="section-title">Portfolio</h2>
+            <p class="section-subtitle">Här är några av mina senaste projekt</p>
+            <div class="tech-stack">
+                <div class="tech-item"><i class="fab fa-html5"></i></div>
+                <div class="tech-item"><i class="fab fa-css3-alt"></i></div>
+                <div class="tech-item"><i class="fab fa-js"></i></div>
+                <div class="tech-item"><i class="fab fa-php"></i></div>
+            </div>
+        </div>
+        <div class="portfolio-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="project1.jpg" alt="CV-webbplats" onerror="this.src='https://via.placeholder.com/400x300'">
+                </div>
+                <div class="project-content">
+                    <h3>CV-webbplats</h3>
+                    <p>En responsiv och interaktiv webbplats som visar upp mina färdigheter och erfarenheter. Byggd med HTML, CSS och JavaScript.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                    <a href="#" class="project-link" data-modal="modal-1">Läs mer</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="project2.jpg" alt="E-handelssida" onerror="this.src='https://via.placeholder.com/400x300'">
+                </div>
+                <div class="project-content">
+                    <h3>E-handelssida</h3>
+                    <p>En e-handelssida med funktioner som produktvisning, varukorg och betalning. Använder både front-end och back-end tekniker.</p>
+                    <div class="project-tags">
+                        <span class="tag">PHP</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                    <a href="#" class="project-link" data-modal="modal-2">Läs mer</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modaler -->
+    <div id="modal-1" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <h2>CV-webbplats</h2>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img src="project1.jpg" alt="CV-webbplats" onerror="this.src='https://via.placeholder.com/800x400'">
+                </div>
+                <div class="modal-description">
+                    <h3>Projektbeskrivning</h3>
+                    <p>En responsiv och interaktiv webbplats som visar upp mina färdigheter och erfarenheter. Byggd med HTML, CSS och JavaScript.</p>
+                    
+                    <h3>Tekniska detaljer</h3>
+                    <ul>
+                        <li>Responsiv design som fungerar på alla enheter</li>
+                        <li>Interaktiva element med JavaScript</li>
+                        <li>Modern CSS-layout med Grid och Flexbox</li>
+                        <li>Optimerad prestanda och tillgänglighet</li>
+                    </ul>
+
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="#" class="btn">
+                            <i class="fas fa-external-link-alt"></i>
+                            Besök webbplatsen
+                        </a>
+                        <a href="#" class="btn">
+                            <i class="fab fa-github"></i>
+                            Se källkoden
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-2" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <h2>E-handelssida</h2>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img src="project2.jpg" alt="E-handelssida" onerror="this.src='https://via.placeholder.com/800x400'">
+                </div>
+                <div class="modal-description">
+                    <h3>Projektbeskrivning</h3>
+                    <p>En e-handelssida med funktioner som produktvisning, varukorg och betalning. Använder både front-end och back-end tekniker.</p>
+                    
+                    <h3>Tekniska detaljer</h3>
+                    <ul>
+                        <li>Fullständigt funktionellt varukorgsystem</li>
+                        <li>Säker betalningsintegration</li>
+                        <li>Databaskoppling med MySQL</li>
+                        <li>Responsiv produktvisning</li>
+                    </ul>
+
+                    <div class="project-tags">
+                        <span class="tag">PHP</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="#" class="btn">
+                            <i class="fas fa-external-link-alt"></i>
+                            Besök webbplatsen
+                        </a>
+                        <a href="#" class="btn">
+                            <i class="fab fa-github"></i>
+                            Se källkoden
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <p>© 2025 Sonni Albihn | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        // Modal funktionalitet
+        document.addEventListener('DOMContentLoaded', function() {
+            const projectLinks = document.querySelectorAll('.project-link');
+            const modals = document.querySelectorAll('.modal');
+            const closeButtons = document.querySelectorAll('.close-modal');
+
+            projectLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const modalId = this.getAttribute('data-modal');
+                    document.getElementById(modalId).classList.add('show-modal');
+                    document.body.style.overflow = 'hidden';
+                });
+            });
+
+            closeButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    this.closest('.modal').classList.remove('show-modal');
+                    document.body.style.overflow = 'auto';
+                });
+            });
+
+            modals.forEach(modal => {
+                modal.addEventListener('click', function(e) {
+                    if (e.target === this) {
+                        this.classList.remove('show-modal');
+                        document.body.style.overflow = 'auto';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
