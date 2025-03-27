@@ -1,0 +1,267 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quizz om internets historia</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <meta name="description" content="">
+  <script type="text/javascript">
+    visaAntalRatt="ja";
+    text=new Array("Antal korrekta svar","Av antal","Procentsats");
+
+    function ratta() {
+      antalRatt=0;
+      i=1;
+      while (typeof(eval("document.fragefalt.svar"+i)) == "object") {
+        for (j=0; j<eval("document.fragefalt.svar"+i+".length"); j++) {
+          if (eval("document.fragefalt.svar"+i+"["+j+"].checked") && eval("document.fragefalt.svar"+i+"["+j+"].value") == "true") {
+            antalRatt++;
+            break;
+          }
+        }
+        i++;
+      }
+      i--;
+
+      if (visaAntalRatt=="ja") {
+        alert(text[0]+": "+antalRatt+"\n"+text[1]+": "+i+"\n"+text[2]+": "+Math.round(antalRatt/i*100)+"%")
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="text-center mb-5">
+      <h1 class="display-4 fw-bold text-primary mb-4">Internets Historia Quiz</h1>
+      <div class="row align-items-center justify-content-center">
+        <div class="col-md-2 text-end">
+          <img src="bild2.jpg" alt="Bild 2" class="img-fluid rounded shadow">
+        </div>
+        <div class="col-md-3">
+          <p class="lead">Testa dina kunskaper om internets historia!</p>
+        </div>
+        <div class="col-md-2 text-start">
+          <img src="bild.jpg" alt="Bild 1" class="img-fluid rounded shadow">
+        </div>
+      </div>
+    </div>
+
+    <form name="fragefalt" class="row row-cols-1 row-cols-md-3 g-4 form1">
+      <!-- Fråga 1 -->
+      <div class="col quiz">
+        <label for="fråga1" >Fråga 1: När skapades ARPANET, föregångaren till internet?</label> 
+          <input type="radio" name="svar1" id="fråga1a" value="false" >
+          1958
+          <input type="radio" name="svar1" id="fråga1b" value="true" >
+          1969
+          <input type="radio" name="svar1" id="fråga1c" value="false" >
+          1972
+      </div>
+
+      <!-- Fråga 2 -->
+      <div class="col quiz">
+        <label for="fråga2" class="form-label">Fråga 2: Vem anses vara "fadern" till World Wide Web?</label>
+        <div class="form-check">
+          <input type="radio" name="svar2" id="fråga2a" value="true" > Tim Berners-Lee
+          
+        </div>
+        <div class="form-check">
+          <input type="radio" name="svar2" id="fråga2b" value="false" >
+          <label class="form-check-label" for="fråga2b">Vint Cerf</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" name="svar2" id="fråga2c" value="false">
+          <label class="form-check-label" for="fråga2c">Larry Page</label>
+        </div>
+      </div><br>
+
+      <!-- Fråga 3 -->
+      <div class="col quiz">
+        <label for="fråga3" class="form-label">Fråga 3: Vilken var den första webbläsaren?</label>
+        <div class="form-check">
+          <input type="radio" name="svar3" id="fråga3a" value="false" >
+          <label class="form-check-label" for="fråga3a">Internet Explorer</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" name="svar3" id="fråga3b" value="true" >
+          <label class="form-check-label" for="fråga3b">WorldWideWeb</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" name="svar3" id="fråga3c" value="false" >
+          <label class="form-check-label" for="fråga3c">Netscape Navigator</label>
+        </div>
+      </div>
+
+      <!-- Fråga 4 -->
+      <div class="col quiz">
+        <label for="fråga4" class="form-label">Fråga 4: Vilket år lanserades den första versionen av Google?</label>
+        <div class="form-check">
+          <input type="radio" name="svar4" id="fråga4a" value="true" >
+          <label class="form-check-label" for="fråga4a">1998</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" name="svar4" id="fråga4b" value="false" >
+          <label class="form-check-label" for="fråga4b">2001</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" name="svar4" id="fråga4c" value="false" >
+          <label class="form-check-label" for="fråga4c">1995</label>
+        </div>
+      </div>
+
+      <!-- Fråga 5 -->
+      <div class="col quiz">
+        <label for="fråga5" class="form-label">Fråga 5: Vad står förkortningen "HTML" för?</label>
+        <div class="form-check">
+          <input type="radio" name="svar5" id="fråga5a" value="false" >
+          <label class="form-check-label" for="fråga5a">Hyperlink Text Markup Language</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" name="svar5" id="fråga5b" value="false" >
+          <label class="form-check-label" for="fråga5b">Home Tool Markup Language</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" name="svar5" id="fråga5c" value="true" >
+          <label class="form-check-label" for="fråga5c">HyperText Markup Language</label>
+        </div>
+      </div>
+
+      <!-- Fråga 6 -->
+      <div class="col quiz">
+        <label for="fråga6" class="form-label">Fråga 6: Vilket protokoll används för att skicka e-post på internet?</label>
+        <div class="form-check">
+          <input type="radio" name="svar6" id="fråga6a" value="false" >
+          <label class="form-check-label" for="fråga6a">FTP</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" name="svar6" id="fråga6b" value="true">
+          <label class="form-check-label" for="fråga6b">SMTP</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" name="svar6" id="fråga6c" value="false" >
+          <label class="form-check-label" for="fråga6c">HTTP</label>
+        </div>
+      </div>
+
+      <!-- Fråga 7 -->
+      <div class="col quiz">
+        <label for="fråga7" class="form-label">Fråga 7: Vad står förkortningen "URL" för?</label>
+        <div class="form-check">
+          <input type="radio" name="svar7" id="fråga7a" value="false" >
+          <label class="form-check-label" for="fråga7a">Uniform Resource Locator</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" name="svar7" id="fråga7b" value="true" >
+          <label class="form-check-label" for="fråga7b">Uniform Resource Locator</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" name="svar7" id="fråga7c" value="false" >
+          <label class="form-check-label" for="fråga7c">Universal Resource Locator</label>
+        </div>
+      </div>
+
+      <!-- Fråga 8 -->
+      <div class="col quiz">
+        <label for="fråga8" class="form-label">Fråga 8: Vad kallas en webbsida som är föråldrad och inte längre uppdateras?</label>
+        <div class="form-check">
+          <input type="radio" name="svar8" id="fråga8a" value="false" >
+          <label class="form-check-label" for="fråga8a">Död länk</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" name="svar8" id="fråga8b" value="false" >
+          <label class="form-check-label" for="fråga8b">Webbplats med låg trafik</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" name="svar8" id="fråga8c" value="true" >
+          <label class="form-check-label" for="fråga8c">Legacy site</label>
+        </div>
+      </div>
+
+      <!-- Fråga 9 -->
+      <div class="col quiz">
+        <label for="fråga9" class="form-label">Fråga 9: Vilket år blev WWW tillgängligt för allmänheten?</label>
+        <div class="form-check">
+          <input type="radio" name="svar9" id="fråga9a" value="false" >
+          <label class="form-check-label" for="fråga9a">1989</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" name="svar9" id="fråga9b" value="false" >
+          <label class="form-check-label" for="fråga9b">1991</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" name="svar9" id="fråga9c" value="true" >
+          <label class="form-check-label" for="fråga9c">1993</label>
+        </div>
+      </div>
+
+      <!-- Fråga 10 -->
+      <div class="col quiz">
+        <label for="fråga10" class="form-label">Fråga 10: Vilken enhet var den första att ansluta sig till ARPANET?</label>
+        <div class="form-check">
+          <input type="radio" name="svar10" id="fråga10a" value="false" >
+          <label class="form-check-label" for="fråga10a">University of California, Los Angeles</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" name="svar10" id="fråga10b" value="true" >
+          <label class="form-check-label" for="fråga10b">Stanford Research Institute</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" name="svar10" id="fråga10c" value="false">
+          <label class="form-check-label" for="fråga10c">University of Utah</label>
+        </div>
+      </div>
+
+      <!-- Fråga 11 -->
+      <div class="col quiz">
+        <label for="fråga11" class="form-label">Fråga 11: Vad står förkortningen "IP" för?</label>
+        <div class="form-check">
+          <input type="radio" name="svar11" id="fråga11a" value="false">
+          <label class="form-check-label" for="fråga11a">Internet Protocol</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" name="svar11" id="fråga11b" value="true" >
+          <label class="form-check-label" for="fråga11b">Internet Protocol</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" name="svar11" id="fråga11c" value="false">
+          <label class="form-check-label" for="fråga11c">Internet Program</label>
+        </div>
+      </div>
+
+      <!-- Fråga 12 -->
+      <div class="col quiz">
+        <label for="fråga12" class="form-label">Fråga 12: Vad står förkortningen "HTTP" för?</label>
+        <div class="form-check">
+          <input type="radio" name="svar12" id="fråga12a" value="true" >
+          <label class="form-check-label" for="fråga12a">HyperText Transfer Protocol</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" name="svar12" id="fråga12b" value="false">
+          <label class="form-check-label" for="fråga12b">HyperText Markup Protocol</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" name="svar12" id="fråga12c" value="false">
+          <label class="form-check-label" for="fråga12c">HyperTransfer Protocol</label>
+        </div>
+      </div>
+
+      <div class="button">
+      <input type="button" value="Rätta" onclick="ratta()">
+    </div>
+
+    </form>
+
+  </div>
+
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    <p>Kontakt: <a href="mailto:sonnialbhin5@gmail.com" class="text-white">sonnialbhin5@gmail.com</a></p>
+    <p>© 2024 Quiz om Internets Historia - Skapad av Sonni Albhin</p>
+  </footer>
+</body>
+</html>
